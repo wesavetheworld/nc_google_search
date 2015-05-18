@@ -4,10 +4,10 @@ class GoogleSiteSearch{
 
 	const CLIENT = 'google-csbe';
 
-	const QUERY_BASE 								= 'http://www.google.com/search?';
-	const QUERY_START_INDEX 				= 'start=%d';
-	const QUERY_RESULTS_COUNT 			= 'num=%d';
-	const QUERY_TERM								= 'q=%s';
+	const QUERY_BASE 			= 'http://www.google.com/search?';
+	const QUERY_START_INDEX 	= 'start=%d';
+	const QUERY_RESULTS_COUNT 	= 'num=%d';
+	const QUERY_TERM			= 'q=%s';
 
 	private $search_term;
 	private $results_count;
@@ -23,22 +23,6 @@ class GoogleSiteSearch{
 		$this->results_count 	= $results_count;
 		$this->start_index 		= $start_index;
 		$this->output_type		= $output_type;
-	}
-
-	public function get_search_term(){
-		return $this->search_term;
-	}
-
-	public function get_results_count(){
-		return $this->results_count;
-	}
-
-	public function get_start_index(){
-		return $this->start_index;
-	}
-
-	public function get_output_type(){
-		return $this->output;
 	}
 
 }
